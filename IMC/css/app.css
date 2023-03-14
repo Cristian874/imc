@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --colorPrimario: #e8de92;
+    --colorSecundario:#810e0b;
+    --colorTerciario: #febea3;
+    --colorCuarto: #fce5b1;
+    --colorBlanco: #fff;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h2{
+    font-weight: 700;
+}
+p,a{
+    font-weight: 400;
+}
+/* css app */
+.imc{
+    margin-top: 10rem;
+}
+
+.imc__heading{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+/* grid */
+@media(min-width:768px){
+    .imc__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3rem;
+
+}
+
+}
+
+.imc__formulario,.imc__impresion{
+    padding: 10rem 2rem;
+    background-color: var(--colorBlanco);
+    box-shadow: 10px 10px 50px 10px rgb(0 0 0 /.30);
+}
+@media(min-width:768px){
+    .imc__formulario{
+        padding: 10rem 5rem;
+    }
+}
+.imc__campo{
+    display:block;
+    margin-bottom: 3rem;
+}
+
+.imc__label{
+    font-size: 2rem;
+}
+
+.imc__input{
+
+    padding: 1.5rem .5rem;
+    width: 100%;
+    margin-top: 1rem;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.imc__boton{
+ background-color: var(--colorTerciario);
+   
+    padding:2rem;
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    transition-property: background-color;
+    transition-duration: .5s;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+@media(min-width:768px){
+    .imc__boton{
+        width: 70%;
+    }
+}
+
+@media(min-width:1280px){
+    .imc__boton{
+        width: 30%;
+    }
+}
+.imc__boton:hover{
+    cursor: pointer;
+    background-color: var(--colorCuarto);
+
+}
+
+.imc__impresion{
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+@media(min-width:768px){
+    .imc__impresion{
+        margin-top: 0;
+    }
+}
+.imc__nombre{
+    font-size: 3rem;
+}
+.imc__estatura,.imc__peso{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.imc__resultado,.imc__mensaje{
+    color: var(--colorSecundario);
+       font-size: 3rem;
+    margin-top: 2rem;
+}
