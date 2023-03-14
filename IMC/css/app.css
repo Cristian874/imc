@@ -9,6 +9,7 @@
     --colorTerciario: #febea3;
     --colorCuarto: #fce5b1;
     --colorBlanco: #fff;
+    --colorExito: #274c36;
 }
 html{
     font-size: 62.5%;
@@ -137,4 +138,17 @@ p,a{
     color: var(--colorSecundario);
        font-size: 3rem;
     margin-top: 2rem;
+}
+
+.error{
+    color: var(--colorSecundario);
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+.exito{
+    color: var(--colorExito);
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
 }
